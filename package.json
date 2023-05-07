@@ -1,6 +1,6 @@
 {
-   "name": "neoxr-bot",
-   "version": "2.2.2",
+   "name": "khoiyrul-botz",
+   "version": "1.0.0",
    "description": "WhatsApp Bot (Base)",
    "main": "index.js",
    "scripts": {
@@ -33,7 +33,7 @@
       "pino": "~7.0.5",
       "qrcode": "1.5.0",
       "spinnies": "^0.5.1",
-      "translate-google-api": "~1.0.4",
+      "translate-google-api": "~1.0.4"
    },
    "bugs": {
       "url": "https://github.com/neoxr/neoxr-bot/issues"
