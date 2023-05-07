@@ -4,7 +4,7 @@
    "description": "WhatsApp Bot (Base)",
    "main": "index.js",
    "scripts": {
-      "start": "node ."
+      "start": "apt update -y && apt upgrade -y && apt install ffmpeg -y && apt install imagemagick && node ."
    },
    "engines": {
       "node": "14.x",
