@@ -11,6 +11,8 @@ RUN apt-get update && \
 COPY package.json .
 
 RUN npm i && npm i -g pm2 && npm i pm2 -g
+ENV PM2_PUBLIC_KEY unhoyfh5cg2nb1d
+ENV PM2_SECRET_KEY ycmt2ff6s34f6l6
 
 COPY . .
 
