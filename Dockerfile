@@ -10,10 +10,10 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm i
+RUN npm i && npm i -g pm2 && npm i pm2 -g
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "index.js", "--server"]
+CMD ["pm2-runtime", "index.js", "--server"]
