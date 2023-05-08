@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN yarn install
+RUN yarn install && npm i -g pm2 && npm i pm2 -g
 
 COPY . .
 
