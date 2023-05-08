@@ -10,10 +10,10 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm i && npm i -g pm2 && npm i pm2 -g
+RUN yarn install
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["pm2-runtime", "index.js"]
+CMD ["node", "index.js"]
