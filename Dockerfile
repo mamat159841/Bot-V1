@@ -16,4 +16,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["pm2-runtime", "--public", "ycmt2ff6s34f6l6 unhoyfh5cg2nb1d", "--secret", "ycmt2ff6s34f6l6 unhoyfh5cg2nb1d", "index.js", "--server"]
+CMD ["pm2-runtime", "index.js", "--server"]
