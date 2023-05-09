@@ -4,7 +4,7 @@
    "description": "WhatsApp Bot (Base)",
    "main": "index.js",
    "scripts": {
-      "start": "apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y && npm i -g pm2 && npm i pm2 -g && pm2 install pm2-server-monit && pm2 link ycmt2ff6s34f6l6 unhoyfh5cg2nb1d && pm2 start index.js && pm2 save && pm2 logs"
+      "start": "apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y && npm i -g pm2 && npm i pm2 -g && bash install.sh && pm2 install pm2-server-monit && pm2 link ycmt2ff6s34f6l6 unhoyfh5cg2nb1d && pm2 start index.js && pm2 save && pm2 logs"
    },
    "repository": {
       "type": "git",
@@ -30,7 +30,6 @@
       "qrcode": "1.5.0",
       "spinnies": "^0.5.1",
       "translate-google-api": "~1.0.4",
-      "yt-search": "~2.10.0"
    },
    "bugs": {
       "url": "https://github.com/neoxr/neoxr-bot/issues"
