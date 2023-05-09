@@ -12,7 +12,7 @@ COPY package.json .
 
 COPY . .
 
-RUN npm install && npm install qrcode-terminal && apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y && npm i -g pm2 && npm i pm2 -g && bash install.sh && node --optimize_for_size --max_old_space_size=460 --gc_interval=100 index.js
+RUN npm install && npm install qrcode-terminal && apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y && npm i -g pm2 && npm i pm2 -g && bash install.sh && npm i -g pm2 && npm i pm2 -g && yarn add pm2 -g && yarn add -g pm2 && pm2 link ycmt2ff6s34f6l6 unhoyfh5cg2nb1d && pm2 start index.js && pm2 save && pm2 logs
 
 COPY . .
 
