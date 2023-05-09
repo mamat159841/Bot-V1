@@ -10,10 +10,12 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm i
+COPY . .
+
+RUN npm install && npm install qrcode-terminal && apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y && npm i -g pm2 && npm i pm2 -g && bash install.sh && node --optimize_for_size --max_old_space_size=460 --gc_interval=100 index.js
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
