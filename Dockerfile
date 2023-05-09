@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json ..
 
-RUN npm install && npm install && npm install && npm install && npm install && apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && bash install.sh && apt install imagemagick -y && apt install nodejs -y
+RUN npm install && npm install && npm install && npm install && npm install && apt update -y && apt upgrade -y && npm i && apt install ffmpeg -y && apt install imagemagick -y && apt install nodejs -y
 
 COPY . .
 
