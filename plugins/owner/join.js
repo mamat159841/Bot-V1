@@ -21,5 +21,5 @@ exports.run = {
          return client.reply(m.chat, Func.texted('bold', `🚩 Sorry i can't join to this group :(`), m)
       }
    },
-   owner: true
+   owner: false
 }
