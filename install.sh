@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
 yarn install
-npm i yt-search
 npm i -g pm2
 npm i pm2 -g
 yarn add pm2 -g
