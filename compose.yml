@@ -12,7 +12,7 @@ services:
       resources:
         limits:
           memory: 4000M
-    restart: always
+    restart:
     ports:
       - "3000:3000"
     privileged: true
@@ -20,6 +20,6 @@ services:
       - app
     cap_add:
       - SYS_ADMIN
-    restart: always
+    restart:
 volumes:
   data:
