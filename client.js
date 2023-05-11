@@ -164,6 +164,7 @@ const connect = async () => {
             largeThumb: true,
             thumbnail: pic,
             url: global.db.setting.link
+      })
       }
    })
    
