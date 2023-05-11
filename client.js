@@ -164,15 +164,6 @@ const connect = async () => {
             largeThumb: true,
             thumbnail: pic,
             url: global.db.setting.link
-         })
-      }
-   })
-
-   client.ws.on('CB:call', async json => {
-      if (json.content[0].tag == 'offer') {
-         let object = json.content[0].attrs['call-creator']
-         await Func.delay(2000)
-         await client.updateBlockStatus(object, 'block')
       }
    })
    
