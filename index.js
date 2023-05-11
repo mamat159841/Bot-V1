@@ -14,11 +14,6 @@ function start() {
 			delete p
 		}
 	})
-	.on('exit', code => {
-		console.error('Exited with code:', code)
-		start()
-	})
-}
 
 CFonts.say('KHOIYRUL BOTZ', {
    font: 'tiny',
