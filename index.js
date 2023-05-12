@@ -14,7 +14,6 @@ function start() {
 			delete p
 		}
 	})
-
 CFonts.say('KHOIYRUL BOTZ', {
    font: 'tiny',
    align: 'center',
